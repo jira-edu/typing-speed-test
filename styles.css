@@ -31,7 +31,7 @@ input[type="text"] {
 }
 
 #word-display {
-    font-size: 32px;
+    font-size: 48px; /* Increase the font size further for better readability */
     font-family: 'IBM Plex Sans Thai', Arial, sans-serif;
     margin-bottom: 20px;
 }
@@ -55,3 +55,21 @@ input[type="text"] {
 }
 
 /* Add more styles and adjustments as needed */
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer p {
+    margin: 0;
+    display: inline; /* Display the paragraph as inline */
+}
