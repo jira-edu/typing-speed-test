@@ -37,9 +37,12 @@ function startTest() {
 function startTimer() {
     const interval = setInterval(() => {
         timer--;
-        timerDisplay.textContent = `Time: ${timer} seconds`;
-
-        if (timer === 0) {
+        
+        if (timer > 0) {
+            timerDisplay.textContent = `เวลาคงเหลือ ${timer} วินาที`;
+        } else {
+            timerDisplay.textContent = "หมดเวลา !"; // Updated text here
+            timerDisplay.style.color = "red"; // Change text color to red
             clearInterval(interval);
             userInput.disabled = true;
             showResult();
