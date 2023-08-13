@@ -17,13 +17,16 @@ body {
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #F79327; /* Set the background color to F79327 */
+    color: #fff; /* Set the text color to white */
+    font-size: 20px; /* Set the font size to 20px */
+    padding: 10px 20px; /* Add padding to the button */
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Set the border radius to 5px */
     cursor: pointer;
+    font-family: 'Noto Serif Thai', Arial, sans-serif; /* Set the same font as the body */
 }
+
 
 input[type="text"] {
     padding: 10px;
@@ -45,13 +48,20 @@ input[type="text"] {
 #word-display {
     font-size: 48px;
     font-family: 'Noto Serif Thai', Arial, sans-serif;
-    margin-bottom: 20px;
 }
 
-#timer,
+#timer {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 #score {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .initial {
@@ -91,4 +101,13 @@ footer {
 footer p {
     margin: 0;
     display: inline; /* Display the paragraph as inline */
+}
+
+footer a {
+    color: #fff; /* Set the desired color for the hyperlink */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:visited {
+    color: #fff; /* Maintain the color for visited links */
 }

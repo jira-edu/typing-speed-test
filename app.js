@@ -1,4 +1,3 @@
-const wordsURL = "https://raw.githubusercontent.com/dolph/dictionary/master/popular.txt";
 let words = [];
 let timer = 60;
 let score = 0;
@@ -12,13 +11,14 @@ const scoreDisplay = document.getElementById("score");
 
 async function fetchWords() {
     try {
-        const response = await fetch(wordsURL);
+        const response = await fetch("https://gist.githubusercontent.com/deekayen/4148741/raw/98d35708fa344717d8eee15d11987de6c8e26d7d/1-1000.txt");
         const text = await response.text();
         words = text.split("\n").filter(word => word.trim() !== "");
     } catch (error) {
         console.error("Error fetching word list:", error);
     }
 }
+
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -105,7 +105,7 @@ userInput.addEventListener("input", () => {
 
     if (inputText === originalWord) {
         score++;
-        scoreDisplay.textContent = `Score: ${score}`;
+        scoreDisplay.textContent = `จำนวนคำ: ${score}`;
         userInput.value = "";
         displayNextWord();
     }
