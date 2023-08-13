@@ -1,5 +1,5 @@
 body {
-    font-family: 'IBM Plex Sans Thai', Arial, sans-serif;
+    font-family: 'Noto Serif Thai', Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     display: flex;
@@ -30,9 +30,21 @@ input[type="text"] {
     margin-top: 10px;
 }
 
+#user-input {
+    font-size: 20px;
+    font-family: 'Noto Serif Thai', Arial, sans-serif;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 50px;
+}
+
 #word-display {
-    font-size: 48px; /* Increase the font size further for better readability */
-    font-family: 'IBM Plex Sans Thai', Arial, sans-serif;
+    font-size: 48px;
+    font-family: 'Noto Serif Thai', Arial, sans-serif;
     margin-bottom: 20px;
 }
 
